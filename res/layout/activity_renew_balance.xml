@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.financialturnover.activities.RenewBalanceActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewNewBalance"
+        android:labelFor="@+id/editTextNewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginBottom="@dimen/element_small_vertical_margin"
+        android:text="@string/new_balance" />
+
+    <EditText
+        android:id="@+id/editTextNewBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textSize="12pt"
+         android:layout_marginBottom="@dimen/element_small_vertical_margin"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:paddingTop="@dimen/element_small_vertical_margin"
+        android:paddingBottom="@dimen/element_small_vertical_margin"
+        android:onClick="onClickApplyBalance"
+        android:text="@string/apply" />
+
+</LinearLayout>

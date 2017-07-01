@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.financialturnover.activities.MainActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewBalanceNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginBottom="@dimen/element_small_vertical_margin"
+        android:text="@string/balance_now" />
+
+    <TextView
+        android:id="@+id/textViewCurrentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewRecentExpenses"
+        android:labelFor="@+id/editTextRecentExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_marginTop="@dimen/element_big_vertical_margin"
+        android:layout_marginBottom="@dimen/element_small_vertical_margin"
+        android:text="@string/recent_expenses" />
+
+    <EditText
+        android:id="@+id/editTextRecentExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSaveExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:layout_marginTop="@dimen/element_small_vertical_margin"
+        android:layout_marginBottom="@dimen/element_big_vertical_margin"
+        android:paddingTop="@dimen/element_small_vertical_margin"
+        android:paddingLeft="@dimen/element_std_horizontal_margin"
+        android:paddingRight="@dimen/element_std_horizontal_margin"
+        android:paddingBottom="@dimen/element_small_vertical_margin"
+        android:onClick="onClickSaveExpenses"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/buttonRenewBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:paddingTop="@dimen/element_small_vertical_margin"
+        android:paddingBottom="@dimen/element_small_vertical_margin"
+        android:onClick="onClickRenewBalance"
+        android:text="@string/renew_balance" />
+</LinearLayout>
